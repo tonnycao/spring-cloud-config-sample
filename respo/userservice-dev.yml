@@ -13,3 +13,5 @@ management:
   endpoints:
     exposure:
       include: refresh,info,health
+    health:
+      show-details: always
