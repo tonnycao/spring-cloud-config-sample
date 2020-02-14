@@ -8,6 +8,11 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8260/eureka
+spring:
+  devtools:
+    restart:
+      enabled: true
+      exclude: test
 
 management:
   endpoints:

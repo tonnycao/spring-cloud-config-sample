@@ -4,3 +4,8 @@ management:
       include: refresh,info,health
     health:
       show-details: always
+spring:
+  devtools:
+    restart:
+      enabled: true
+      exclude: test
