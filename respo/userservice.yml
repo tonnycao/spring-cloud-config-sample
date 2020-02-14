@@ -2,3 +2,7 @@ logging:
   level:
     org:
       springframework: INFO
+management:
+  endpoints:
+    exposure:
+      include: refresh,info,health

@@ -9,3 +9,8 @@ eureka:
 feign:
   hystrix:
     enabled: true
+
+management:
+  endpoints:
+    exposure:
+      include: refresh,info,health
