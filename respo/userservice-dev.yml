@@ -3,6 +3,8 @@ server:
 eureka:
   instance:
     prefer-id-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -13,6 +15,15 @@ spring:
     restart:
       enabled: true
       exclude: test
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: guest
+    password: guest
 
 management:
   endpoints:
