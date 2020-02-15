@@ -20,10 +20,10 @@ spring:
       trace:
         enabled: true
   rabbitmq:
-    host: 127.0.0.1
-    port: 15672
-    username: guest
-    password: guest
+    host: localhost
+    port: 5672
+    username:
+    password: 
 
 management:
   endpoints:
