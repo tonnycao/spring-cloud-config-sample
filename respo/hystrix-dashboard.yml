@@ -4,18 +4,12 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
-    service-url:
-      defaultZone: http://peer1:8260/eureka,http://peer2:8261/eureka,http://peer3:8262/eureka
-
+    service-url.defaultZone: http://peer1:8260/eureka,http://peer2:8261/eureka,http://peer3:8262/eureka
 spring:
-  devtools:
-    restart:
-      enabled: true
-      exclude: test
-
-feign:
-  hystrix:
-    enabled: true
+  boot:
+    admin:
+      client:
+        url: http://localhost:8071
 management:
   endpoints:
     exposure:
